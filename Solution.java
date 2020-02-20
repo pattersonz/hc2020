@@ -6,28 +6,18 @@ import java.io.*;
 
 public class Solution{
 
-public static void main()
+public static void main(String args[]) throws IOException
 {
     //get file name
     System.out.print("file: ");
     Scanner scanner = new Scanner(System.in);
     String fName = scanner.next();
     File f = new File(fName + ".in");
-    try
-	{
-	    scanner = new Scanner(f);
-	}
-    catch (Exception e)
-	{}
+    scanner = new Scanner(f);
     //handle alg
 
     //output results
-    try
-	{
-	    PrintWriter writer = new PrintWriter(fName + ".out");
-	}
-    catch (Exception e)
-	{}
+    PrintWriter writer = new PrintWriter(fName + ".out");
     return ;
 }
     
